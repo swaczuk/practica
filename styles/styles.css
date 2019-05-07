@@ -13,6 +13,7 @@ ul, .fab, .far, .fas {
   text-decoration: none;
   list-style: none;
   margin: 5px 10px;
+  padding: 0;
 }
 
 a {
@@ -38,7 +39,7 @@ header {
   display: flex;
   flex: 2 1 auto;
 }
-.locationi, .location li, .logoi, .logo li {
+.location i, .location li, .logo i, .logo li {
   margin: 0 20px;
 }
 
@@ -60,20 +61,17 @@ header {
   height: 100vh;
   margin: 0;
 }
-
-.main-atr {
+.main .main-atr {
   display: block;
   float: left;
   text-align: left;
   margin-left: 60px;
 }
-
-h1 {
+.main .main-atr h1 {
   font-size: 40px;
   margin-top: 30vh;
 }
-
-.main-text {
+.main .main-atr .main-text {
   display: block;
   width: 400px;
 }

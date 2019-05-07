@@ -14,6 +14,7 @@ ul, .fab, .far, .fas {
     text-decoration: none;
     list-style: none;
     margin: 5px 10px;
+    padding:0;
 }
 
 
@@ -40,7 +41,7 @@ header{
 .location, .logo{
     display:flex;
     flex: 2 1 auto;
-    &i, li{
+    i, li{
     margin: 0 20px; 
     }
 }
@@ -65,24 +66,26 @@ header{
     background-size: 100% 100%;
     height:100vh;
     margin:0;
+    
+    .main-atr{
+        display: block;
+        float:left;
+        text-align: left;
+        margin-left:60px;
+        
+        h1{
+            font-size: 40px;
+            margin-top: 30vh;
+        }
+                .main-text{
+                    display:block;
+                    width: 400px;
+                }
+    }
 }
 
-.main-atr{
-    display: block;
-    float:left;
-    text-align: left;
-    margin-left:60px;
-}
 
-h1{
-    font-size: 40px;
-    margin-top: 30vh;
-}
 
-.main-text{
-    display:block;
-    width: 400px;
-}
 
 .btn-ladron, .btn-asesino{
     margin-top: 30px;
