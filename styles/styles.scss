@@ -8,26 +8,27 @@ body{
     color: #333333;
 }
 
+@mixin flexProperties($dir){
+    display: flex;
+    flex-direction: $dir;
+    flex:1;
+}
 
 
 a{
     color: rgb(15, 15, 15);
     text-decoration: none;
     &:hover{
-    color: #999;
-}
-
+        color: #999;
+    }
 }
 
 header{
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 10px;
-    padding-left: 10px;
+    margin:0 auto;
+    padding:0 10px;
     max-width: 960px;
      .mini-menu, .menu{
-        display:flex;
-        flex-direction: row;
+        @include flexProperties('row');
         justify-content: flex-start;
         align-items: center;
         ul, .fab, .far, .fas {
@@ -46,16 +47,13 @@ header{
     display:flex;
     flex: 2 1 auto;
     i, li{
-    margin: 0 5px; 
+        margin: 0 5px; 
     }
 }
 
 .social, .logo{
-    display: flex;
-    flex-direction: row;
-    flex:1 1;
+    @include flexProperties('row');
     font-size: 12px;
-
 }
 
 .sarasa {
@@ -81,19 +79,18 @@ header{
             font-size: 40px;
             margin-top: 30vh;
         }
-                .main-text{
-                    display:block;
-                    width: 400px;
-                }
-                .btn-ladron, .btn-asesino{
-                    margin-top: 30px;
-                    height: 50px;
-                    border:1px solid #2c05db;
-                    &:hover{
-                        background-color: #2c05db;
-                    }
-                    
-                }
+        .main-text{
+            display:block;
+            width: 400px;
+        }
+        .btn-ladron, .btn-asesino{
+            margin-top: 30px;
+            height: 50px;
+            border:1px solid #2c05db;
+            &:hover{
+                background-color: #2c05db;
+            }
+        }
     }
 }
 
